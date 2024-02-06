@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Clicker</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <header>
+        <nav>
+            <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div> <!--javascript call voor de button-->
+            <div><button id="ads"></button></div>
+            <div><button id="vipButton" onclick="overlayOn('vip')"><a>VIP</a></button></div>
+        </nav>
+     </header>
+     <main onclick="overlayOff('invest') ; overlayOff('vip') ; overlayOff('leaderboard') ">
+        <canvas id="canvas"></canvas>
+        <div class="items"> <!--alle elementen in main-->
+            <div class="amount"><p id="score"></span></div>
+            <div class="logo"><button class="logo" onclick="add()"><img src="styles/logo.png"></button></div>
+        </div>
+        <div class="icons">
+            <button class="settings"><img src="styles/settings.png" class="settings"></button>
+            <button id="leaderboardButton" onclick="overlayOn('leaderboard')">Leaderboard</button>
+        </div>
+        <div id="invest" > <!--overlay-->
+            <a href="#" class="close"></a>
+            <ul id="invest-left">
+                <h1>INVEST</h1>
+                <table>
+                    <tr>
+                      <tH>DITCOIN</tH>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                    <tr>
+                      <tH>DECACOIN</td>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                    <tr>
+                      <th>DIX</td>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                  </table>
+            </ul>
+            <ul id="invest-middle">
+                <h2>SHARES</h2>
+                <table>
+                    <tr>
+                      <th>GOLD</td>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                    <tr>
+                      <th>DECACOIN</td>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                    <tr>
+                      <th>GAS</td>
+                      <td> xxx </td>
+                      <td> <button class="buybut">Buy</button> </td>
+                      <td class="tableimg"> img </td>
+                    </tr>
+                  </table>
+            </ul>
+        </div>
+        <div id="vip"> <!--overlay-->
+            <a href="#" class="close"></a>
+        </div>
+        <div id="leaderboard" > <!--overlay-->
+            <a href="#" class="close"></a>
+        </div>
+     </main>
+     <footer>
+        
+     </footer>
+     <script src="javascript/value.js"></script>
+     <script src="javascript/overlay.js"></script>
+     <script src="javascript/particles.js"></script>
+</body>
+
+</html>
