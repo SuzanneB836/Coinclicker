@@ -19,12 +19,12 @@ echo "<br>  " .$postMail. " " .$postWw. "";
 
 if($email == $postMail && $wachtwoord == $postWw)
 {
-   header("Location:mainpage.html");
+   header("Location:index.html");
 }
 
 else
 {
-    header("Location:index.php");
+    header("Location:login.php");
 }
 ?>
 
