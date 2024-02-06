@@ -20,7 +20,7 @@
                 <button type="submit" >Login</button>
                 </div>
                 <div class="text3"><h2>Dont have an account yet? Register</h2></div>
-                <div class="text4"><h2>By signing up i agree to the Terms of Service</h2>
+                <div class="text4"><h2>By signing up I agree to the Terms of Service</h2>
                 <div class checkbox></div>
                  <input type="checkbox" id="myCheckbox">
                  <label for="myCheckbox"></label>
