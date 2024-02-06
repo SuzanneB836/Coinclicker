@@ -1,6 +1,3 @@
-<html>
-<head>
-
 <?php
 /* dit programma, pgm_post3bpost is met "post" aangeroepen vanuit pgm_post3a. De variabelen van pgm_post3a zijn 
 dus ook bekend in:
@@ -27,7 +24,3 @@ else
     header("Location:login.php");
 }
 ?>
-
-
-</body>
-</html>
