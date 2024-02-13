@@ -10,11 +10,10 @@
      <header>
         <nav>
             <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div> <!--javascript call voor de button-->
-            <div><button id="ads"></button></div>
-            <div><button id="vipButton" onclick="overlayOn('vip')"><a>VIP</a></button></div>
+            <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
         </nav>
      </header>
-     <main onclick="overlayOff('invest') ; overlayOff('vip') ; overlayOff('leaderboard') ">
+     <main onclick="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
         <canvas id="canvas"></canvas>
         <div class="items"> <!--alle elementen in main-->
             <div class="amount"><p id="score"></span></div>
@@ -73,8 +72,9 @@
                   </table>
             </ul>
         </div>
-        <div id="vip"> <!--overlay-->
+        <div id="login"> <!--overlay-->
             <a href="#" class="close"></a>
+            
         </div>
         <div id="leaderboard" > <!--overlay-->
             <a href="#" class="close"></a>

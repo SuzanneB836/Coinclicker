@@ -6,7 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-/*#region header*/
+
 nav {
     display: flex;
     background-color: rgb(62, 53, 53);
@@ -24,9 +24,6 @@ nav div button {
     margin-right: 20px;
 }
 
-
-/*#endregion header*/
-/*#region main*/
 main {
     background-color: rgb(234, 237, 236);
     height: 70vh;
@@ -45,8 +42,8 @@ main {
     width: 100vw;
     height: 80%;
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -108,9 +105,9 @@ main {
     height: 400px;
     background-color: rgba(62, 53, 53);
     z-index: 2;
-    left: 50%; /* Horizontal centering */
-    top: 50%; /* Vertical centering */
-    transform: translate(-50%, -50%); /* Centering trick */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     justify-content: center;    
@@ -149,25 +146,25 @@ main {
     text-align: right;
   }
 
-  #vip {
+  #login {
     position: fixed;
     display: none;
     width: 600px;
     height: 400px;
     background-color: rgba(62, 53, 53);
     z-index: 2;
-    left: 50%; /* Horizontal centering */
-    top: 50%; /* Vertical centering */
-    transform: translate(-50%, -50%); /* Centering trick */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
   }
 
-  #vip h1 {
+  #login h1 {
     color: gold;
     font-size: 5vw;
   }
   
-  #vip button {
+  #login button {
     background-color: rgba(255, 255, 255, 0.164);
     border-color: gold;
     border-radius: 0.001px;
@@ -182,13 +179,13 @@ main {
     font-size: 50px;
   }
 
-  #vip h2 {
+  #login h2 {
     color: white;
     font-size: 2vw;
     margin-top: 2vh;
   }
 
-  #vip p {
+  #login p {
     color: white;
     font-size: 1vw;
     margin-top: 1.5vh;
@@ -201,17 +198,15 @@ main {
     height: 400px;
     background-color: rgba(62, 53, 53);
     z-index: 2;
-    left: 50%; /* Horizontal centering */
-    top: 50%; /* Vertical centering */
-    transform: translate(-50%, -50%); /* Centering trick */
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
   }
   
-/*#endregion main*/
-/*#region footer*/
 footer {
     background-color: rgb(62, 53, 53);
     height: 15vh;
 }
-/*#endregion footer*/
+
 
 
