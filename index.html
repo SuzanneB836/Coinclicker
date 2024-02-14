@@ -13,7 +13,7 @@
             <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
         </nav>
      </header>
-     <main onclick="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
+     <main onmouseover="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
         <canvas id="canvas"></canvas>
         <div class="items">
             <div class="amount"><p id="score"></p></div>
@@ -24,7 +24,7 @@
             <button id="leaderboardButton" onclick="overlayOn('leaderboard')">Leaderboard</button>
         </div>
         <div id="invest" >
-            <div class="close" onclick="overlayOff('invest')">x</div>
+            <div class="close" onclick="overlayOff('invest')">Close</div>
             <ul id="invest-left">
                 <h1>INVEST</h1>
                 <table>
@@ -73,10 +73,10 @@
             </ul>
         </div>
         <div id="login" >
-            <div class="close" onclick="overlayOff('login')">x</div>
+            <div class="close" onclick="overlayOff('login')">Close</div>
         </div>
         <div id="leaderboard" >
-            <div class="close" onclick="overlayOff('leaderboard')">x</div>
+            <div class="close" onclick="overlayOff('leaderboard')">Close</div>
         </div>
      </main>
      <footer>

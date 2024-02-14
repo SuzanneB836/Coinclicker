@@ -19,6 +19,8 @@ setInterval ( function(){
   document.getElementById("score").innerHTML = score + "D"; 
 },1000) ;
 
+
+
 function add() {
   score++;
   document.getElementById("score").innerHTML = score + "D"; 
