@@ -9,39 +9,39 @@
 <body>
      <header>
         <nav>
-            <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div> <!--javascript call voor de button-->
+            <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div>
             <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
         </nav>
      </header>
      <main onclick="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
         <canvas id="canvas"></canvas>
-        <div class="items"> <!--alle elementen in main-->
-            <div class="amount"><p id="score"></span></div>
+        <div class="items">
+            <div class="amount"><p id="score"></p></div>
             <div class="logo"><button class="logo" onclick="add()"><img src="img/logo.png"></button></div>
         </div>
         <div class="icons">
             <button class="settings"><img src="img/settings.png" class="settings"></button>
             <button id="leaderboardButton" onclick="overlayOn('leaderboard')">Leaderboard</button>
         </div>
-        <div id="invest" > <!--overlay-->
-            <a href="#" class="close"></a>
+        <div id="invest" >
+            <div class="close" onclick="overlayOff('invest')">x</div>
             <ul id="invest-left">
                 <h1>INVEST</h1>
                 <table>
                     <tr>
-                      <tH>DITCOIN</tH>
+                      <th>DITCOIN</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
                     </tr>
                     <tr>
-                      <tH>DECACOIN</td>
+                      <th>DECACOIN</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
                     </tr>
                     <tr>
-                      <th>DIX</td>
+                      <th>DIX</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
@@ -52,19 +52,19 @@
                 <h2>SHARES</h2>
                 <table>
                     <tr>
-                      <th>GOLD</td>
+                      <th>GOLD</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
                     </tr>
                     <tr>
-                      <th>DECACOIN</td>
+                      <th>DECACOIN</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
                     </tr>
                     <tr>
-                      <th>GAS</td>
+                      <th>GAS</th>
                       <td> xxx </td>
                       <td> <button class="buybut">Buy</button> </td>
                       <td class="tableimg"> img </td>
@@ -72,12 +72,11 @@
                   </table>
             </ul>
         </div>
-        <div id="login"> <!--overlay-->
-            <a href="#" class="close"></a>
-            
+        <div id="login" >
+            <div class="close" onclick="overlayOff('login')">x</div>
         </div>
-        <div id="leaderboard" > <!--overlay-->
-            <a href="#" class="close"></a>
+        <div id="leaderboard" >
+            <div class="close" onclick="overlayOff('leaderboard')">x</div>
         </div>
      </main>
      <footer>
