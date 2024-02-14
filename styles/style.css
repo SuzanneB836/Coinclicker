@@ -1,4 +1,5 @@
-*{
+/* Reset styles */
+* {
   overflow: hidden;
   box-sizing: border-box;
   padding: 0;
@@ -7,12 +8,13 @@
   font-weight: 600;
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   background-color: rgb(62, 53, 53);
   height: 15vh;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Duplicate property */
 }
 
 nav div button {
@@ -24,6 +26,7 @@ nav div button {
   margin-right: 20px;
 }
 
+/* Main content styles */
 main {
   background-color: rgb(234, 237, 236);
   height: 70vh;
@@ -61,6 +64,7 @@ main {
   padding-top: 3%;
 }
 
+/* Logo styles */
 .logo {
   padding-top: 3%;
   outline: none;
@@ -73,6 +77,7 @@ main {
   width: 300px;
 }
 
+/* Icons styles */
 .icons {
   height: 20%;
   display: flex;
@@ -80,12 +85,14 @@ main {
   align-items: flex-end;
 }
 
+/* Leaderboard button styles */
 #leaderboardButton {
   height: 60px;
   width: 200px;
   font-size: 22px;
 }
 
+/* Settings button styles */
 .settings {
   height: 50px;
   width: 50px;
@@ -93,6 +100,7 @@ main {
   border: none;
 }
 
+/* Invest popup styles */
 #invest {
   position: fixed;
   display: none;
@@ -105,22 +113,24 @@ main {
   transform: translate(-50%, -50%);
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  justify-content: center;    
+  justify-content: center;
   font-size: 20px;
 }
 
-#invest p, h1 {
+#invest p,
+#invest h1 {
   padding-top: 20px;
 }
 
 #invest h1 {
   padding-left: 38%;
-} 
+}
 
 #invest h2 {
   padding-left: 39.4%;
 }
 
+/* Table styles */
 table {
   width: 94%;
   margin-top: 20px;
@@ -140,6 +150,7 @@ td {
   text-align: right;
 }
 
+/* Login popup styles */
 #login {
   position: fixed;
   display: none;
@@ -150,41 +161,44 @@ td {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 #login h1 {
+  text-align: center;
   color: gold;
   font-size: 5vw;
 }
 
 #login button {
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.164);
   border-color: gold;
   border-radius: 0.001px;
   color: gold;
-  padding: 15 px 100px;
+  padding: 15px 100px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-
   font-size: 50px;
 }
 
 #login h2 {
+  text-align: center;
   color: white;
   font-size: 2vw;
   margin-top: 2vh;
 }
 
 #login p {
+  text-align: center;
   color: white;
   font-size: 1vw;
   margin-top: 1.5vh;
 }
 
+/* Leaderboard popup styles */
 #leaderboard {
   position: fixed;
   display: none;
@@ -197,6 +211,7 @@ td {
   transform: translate(-50%, -50%); 
 }
 
+/* Footer styles */
 footer {
   background-color: rgb(62, 53, 53);
   height: 15vh;
