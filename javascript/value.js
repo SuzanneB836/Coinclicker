@@ -14,6 +14,11 @@ function buyCoins() {
   }
 }
 
+setInterval ( function(){
+  score=score + DIT
+  document.getElementById("score").innerHTML = score + "D"; 
+},1000) ;
+
 function add() {
   score++;
   document.getElementById("score").innerHTML = score + "D"; 
