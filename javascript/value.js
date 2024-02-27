@@ -25,3 +25,5 @@ function add() {
   score++;
   document.getElementById("score").innerHTML = score + "D"; 
 }
+
+

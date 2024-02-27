@@ -222,3 +222,28 @@ footer {
   background-color: rgb(157, 157, 157);
   border: 10px black;
 }
+
+.action-space {
+  display: grid;
+}
+
+#in-part1 {
+  border-style:solid;
+  background-color: rosybrown;
+  display:none;
+}
+#in-part2 {
+  border-style: solid;
+  background-color: rosybrown;
+  display:none;
+}
+#in-part3 {
+  border-style: solid;
+  background-color: rosybrown;
+  display:none;
+}
+#in-part4 {
+  border-style: solid;
+  background-color: rosybrown;
+  display:none;
+}
