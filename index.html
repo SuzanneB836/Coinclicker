@@ -15,9 +15,16 @@
      </header>
      <main onmouseover="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
         <canvas id="canvas"></canvas>
+        <div class="action-space">
+          <div id="in-part1">I</div>
+          <div id="in-part2">II</div>
+          <div id="in-part3">III</div>
+          <div id="in-part4">IV</div>
+        </div>
         <div class="items">
             <div class="amount"><p id="score"></p></div>
-            <div class="logo"><button class="logo" onclick="add()"><img src="img/logo.png"></button></div>
+            <div class="logo"><button class="logo" onclick="add()"><img draggable="false" src="img/logo.png"></button></div>
+
         </div>
         <div class="icons">
             <button class="settings"><img src="img/settings.png" class="settings"></button>
