@@ -13,7 +13,7 @@
             <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
         </nav>
      </header>
-     <main onmouseover="overlayOff('invest') ; overlayOff('login') ; overlayOff('leaderboard') ">
+     <main onmouseover="overlayOff('invest') ; overlayOff('login') ; overlayOff('achievements') ">
         <canvas id="canvas"></canvas>
         <div class="action-space">
           <div id="in-part1">I</div>
@@ -42,7 +42,7 @@
         </div>
         <div class="icons">
             <button class="settings"><img src="img/settings.png" class="settings"></button>
-            <button id="leaderboardButton" onclick="overlayOn('leaderboard')">Leaderboard</button>
+            <button id="achievementsButton" onclick="overlayOn('achievements')">Achievements</button>
         </div>
         <div id="invest" >
             <div class="close" onclick="overlayOff('invest')">Close</div>
@@ -97,8 +97,8 @@
             <div class="close" onclick="overlayOff('login')">Close</div>
             
         </div>
-        <div id="leaderboard" >
-            <div class="close" onclick="overlayOff('leaderboard')">Close</div>
+        <div id="achievements" >
+            <div class="close" onclick="overlayOff('achievements')">Close</div>
         </div>
      </main>
      <footer>

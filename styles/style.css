@@ -85,8 +85,8 @@ main {
   align-items: flex-end;
 }
 
-/* Leaderboard button styles */
-#leaderboardButton {
+/* Achievements button styles */
+#achievementsdButton {
   height: 60px;
   width: 200px;
   font-size: 22px;
@@ -198,8 +198,8 @@ td {
   margin-top: 1.5vh;
 }
 
-/* Leaderboard popup styles */
-#leaderboard {
+/* Achievements popup styles */
+#achievements {
   position: fixed;
   display: none;
   width: 700px;
