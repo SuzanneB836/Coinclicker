@@ -68,7 +68,7 @@ main {
   margin-top: 3%;
   outline: none;
   border-style: ridge;
-  border-radius: 40%;
+  border-radius: 300px;
   cursor: pointer
 
 }
