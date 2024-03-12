@@ -28,7 +28,6 @@ nav div button {
 
 /* Main content styles */
 main {
-  background-color: rgb(234, 237, 236);
   height: 70vh;
   width: 100vw;
   position: relative;
@@ -69,7 +68,6 @@ main {
   padding-top: 3%;
   outline: none;
   border: none;
-  background-color: rgb(234, 237, 236);
 }
 
 .logo img {
