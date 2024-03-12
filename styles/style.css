@@ -69,7 +69,8 @@ main {
   outline: none;
   border-style: ridge;
   border-radius: 300px;
-  cursor: pointer
+  cursor: pointer;
+  background-color: #ffc900;
 
 }
 
