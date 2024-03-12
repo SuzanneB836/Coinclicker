@@ -41,6 +41,7 @@ main {
 }
 
 .items {
+ 
   width: 100vw;
   height: 80%;
   display: flex;
@@ -50,7 +51,6 @@ main {
 }
 
 .amount {
-  background-color: rgb(225, 224, 206);
   width: 300px;
   height: 5vh;
   border-radius: 15px;
@@ -65,9 +65,10 @@ main {
 
 /* Logo styles */
 .logo {
-  padding-top: 3%;
+  margin-top: 3%;
   outline: none;
   border: none;
+  
 }
 
 .logo img {
