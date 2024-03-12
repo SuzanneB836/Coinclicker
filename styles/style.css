@@ -69,7 +69,8 @@ main {
   margin-top: 3%;
   outline: none;
   border: none;
-  
+  border-radius: 40%;
+  cursor: pointer
 }
 
 .logo img {
