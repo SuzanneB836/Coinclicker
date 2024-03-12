@@ -67,9 +67,10 @@ main {
 .logo {
   margin-top: 3%;
   outline: none;
-  border: none;
+  border-style: ridge;
   border-radius: 40%;
   cursor: pointer
+
 }
 
 .logo img {
