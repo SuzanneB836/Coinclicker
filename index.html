@@ -90,12 +90,20 @@
         </div>
         <div id="login" >
             <div class="close" onclick="overlayOff('login')">Close</div>
+                <div class="tab-bar">
+                  <button class="tab-item tab-button" onclick="openTab('Login')">Login</button>
+                  <button class="tab-item tab-button" onclick="openTab('Register')">Register</button>
+                </div>
 
-            <h1>LOGIN</h1>
+                <div id="Login" class="tab-container tab">
+                  <h1> Login </h1>
+                  <p> Enter ... </p>
+                </div>
 
-
-            <p><i> Don't have an account yet? <button>Register</button></i></p>
-            
+                <div id="Register" class="tab-container tab" style ="display:none;">
+                  <h1> Register </h1>
+                  <p>  Create a new account. </p>
+                </div>
         </div>
         <div id="achievements" >
             <div class="close" onclick="overlayOff('achievements')">Close</div>
@@ -107,6 +115,7 @@
      <script src="javascript/value.js"></script>
      <script src="javascript/overlay.js"></script>
      <script src="javascript/particles.js"></script>
+     <script src="javascript/tab.js"></script>
 </body>
 
 </html>

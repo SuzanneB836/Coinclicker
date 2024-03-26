@@ -165,28 +165,28 @@ td {
   transform: translate(-50%, -50%);
 }
 
-#login h1 {
-  text-align: center;
-  color: gold;
-  font-size: 5vw;
+.tab-bar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
 }
 
-#login button {
-  
+.tab-button {
+  width: 50%;
+  color: #fff;
 }
 
-#login h2 {
-  text-align: center;
-  color: white;
-  font-size: 2vw;
-  margin-top: 2vh;
+.tab-item {
+  padding: 10px;
+  float: left;
+  border: solid;
+  border-color: rgba(62, 53, 53);
+  background-color: inherit;
+  cursor: pointer;
 }
 
-#login p {
-  text-align: center;
-  color: white;
-  font-size: 1vw;
-  margin-top: 1.5vh;
+.tab-item:hover {
+  background-color: #4d4d4d;
 }
 
 /* Achievements popup styles */
