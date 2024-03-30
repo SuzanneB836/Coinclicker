@@ -202,6 +202,19 @@ td {
   transform: translate(-50%, -50%); 
 }
 
+.achievement {
+  margin-bottom: 5px; /* Add some space between achievements */
+  padding: 10px;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.achievement.achieved {
+  background-color: #cfe8cf; /* Light green background for achieved achievements */
+}
+
+
 /* Footer styles */
 footer {
   background-color: rgb(62, 53, 53);
