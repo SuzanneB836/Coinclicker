@@ -227,6 +227,10 @@ footer {
   display: grid;
 }
 
+.bigger {
+  font-size: 26px;
+}
+
 #in-part1 {
   border-style:solid;
   background-color: rosybrown;
