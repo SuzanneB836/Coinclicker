@@ -196,20 +196,24 @@ td {
   width: 700px;
   height: 400px;
   background-color: rgba(62, 53, 53);
+  z-index: 2;
   left: 50%; 
   top: 50%; 
   transform: translate(-50%, -50%); 
 }
 
-#achievementList {
-  background: inherit;
+.achievement {
+  margin-bottom: 5px; /* Add some space between achievements */
+  padding: 10px;
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-#achievementItem {
-  background-color: #E1E0CE;
-  border: solid;
-  border-color: rgba(62, 53, 53);
+.achievement.achieved {
+  background-color: #cfe8cf; /* Light green background for achieved achievements */
 }
+
 
 /* Footer styles */
 footer {
