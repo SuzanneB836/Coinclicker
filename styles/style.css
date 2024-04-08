@@ -202,13 +202,27 @@ td {
 }
 
 #achievementList {
-  background: inherit;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
 }
 
 #achievementItem {
   background-color: #E1E0CE;
   border: solid;
   border-color: rgba(62, 53, 53);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.achievementItem label {
+  margin-right: 10px;
+}
+
+.achievementItem input[type="checkbox"] {
+  margin-left: auto;
 }
 
 /* Footer styles */
