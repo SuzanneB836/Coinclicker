@@ -95,15 +95,19 @@
                   <button class="tab-item tab-button" onclick="openTab('Register')">Register</button>
                 </div>
 
-                <div id="Login" class="tab-container tab">
-                  <h1> Login </h1>
-                  <p> Enter ... </p>
-                </div>
+                <div id="Register" class="tab-container tab">
+                  <form action="php/formhandler.php" method = "post" class="meContainer23">
+                    <input type= "text" name = "username" placeholder = " Username" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
+                    <input type= "password" name = "pwd" placeholder = "Password" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
+                    <input type= "text" name = "email" placeholder = " E-Mail" style="height: 50px; width: 400px; text-align: center; font-size: 30px;  margin-bottom: 20px;">
+                    <button style="height: 50px; width: 200px; text-align: center; font-size: 30px;  margin-bottom: 20px;"> SignUp </button> 
+                    
+                </form>
 
-                <div id="Register" class="tab-container tab" style ="display:none;">
-                  <h1> Register </h1>
-                  <p>  Create a new account. </p>
-                </div>
+
+                <div id="Login" class="tab-container tab" style ="display:none;">
+
+<!--style="height: 50px; width: 300px; text-align: center; font-size: 30px;  margin-bottom: 20px;">-->
         </div>
         <div id="achievements" >
             <div class="close" onclick="overlayOff('achievements')">Close</div>
@@ -143,5 +147,10 @@
      <script src="javascript/particles.js"></script>
      <script src="javascript/tab.js"></script>
      <script src="javascript/achievement.js"></script>
+
+
+
+
+ 
 </body>
 </html>
