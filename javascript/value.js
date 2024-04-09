@@ -24,6 +24,6 @@ setInterval ( function(){
 function add() {
   score++;
   document.getElementById("score").innerHTML = score + "D"; 
+  sessionStorage.setItem("score", score);
 }
-
 

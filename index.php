@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,8 @@
 <body>
      <header>
         <nav>
+
+
             <div><button onclick="overlayOn('invest')" id="investButton"><a>INVEST</a></button></div>
             <div><button id="loginButton" onclick="overlayOn('login')"><a>LOGIN</a></button></div>
         </nav>
@@ -29,7 +35,8 @@
            
             }
             </style>
-            <div class="amount"><p id="score"></p></div>
+
+           <div class="amount_glass"> <div class="amount"><p id="score"></p></div> </div>
            <button class="logo" onclick="add()"><img draggable="false" src="img/logo.png"></button>
 
 
@@ -89,31 +96,42 @@
             </ul>
         </div>
         <div id="login" >
-            <div class="close" onclick="overlayOff('login')">Close</div>
-                <div class="tab-bar">
-                  <button class="tab-item tab-button" onclick="openTab('Login')">Login</button>
+          <div class="close" onclick="overlayOff('login')">Close</div>
+              <div class="tab-bar">
+                <button class="tab-item tab-button" onclick="openTab('Login')">Do With An Account</button>
+                <button class="tab-item tab-button" onclick="openTab('Register')">Create An Account</button>
+              </div>
 
 
+              <div id="Login" class="tab-container tab">
+                <form action="php/login.php" method="POST" class="meContainer2">
+                  <div class="form-group">
 
-                  <button class="tab-item tab-button" onclick="openTab('Register')">Register</button>
-                </div>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;" required>
+                  </div>
+                  <div class="form-group">
 
-                <div id="Register" class="tab-container tab">
-                  <form action="php/formhandler.php" method = "post" class="meContainer23">
-                    <input type= "text" name = "username" placeholder = " Username" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
-                    <input type= "password" name = "pwd" placeholder = "Password" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
-                    <input type= "text" name = "email" placeholder = " E-Mail" style="height: 50px; width: 400px; text-align: center; font-size: 30px;  margin-bottom: 20px;">
-                    <button style="height: 50px; width: 200px; text-align: center; font-size: 30px;  margin-bottom: 20px;"> SignUp </button> 
-                    
+                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="height: 50px; width: 200px; text-align: center; font-size: 30px;  margin-bottom: 20px;">Login</button>
                 </form>
+              </div>
 
-                </div>
-                <div id="Login" class="tab-container tab" style ="display:none;"> 
 
-                </div>
-
+          
+              <div id="Register" class="tab-container tab" style ="display:none;">
+                <form action="php/formhandler.php" method = "post" class="meContainer23">
+                  <input type= "text" name = "username" placeholder = " Username" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
+                  <input type= "password" name = "pwd" placeholder = "Password" style="height: 50px; width: 300px; text-align: center; font-size: 20px;  margin-bottom: 20px;">
+                  <input type= "text" name = "email" placeholder = " E-Mail" style="height: 50px; width: 400px; text-align: center; font-size: 30px;  margin-bottom: 20px;">
+                  <button style="height: 50px; width: 200px; text-align: center; font-size: 30px;  margin-bottom: 20px;"> SignUp </button> 
+                  
+              </form>
+              </div>
+      </div>
+       
 <!--style="height: 50px; width: 300px; text-align: center; font-size: 30px;  margin-bottom: 20px;">-->
-        </div>
+
         <div id="achievements" >
             <div class="close" onclick="overlayOff('achievements')">Close</div>
             <div id="achievementList">
@@ -152,6 +170,8 @@
      <script src="javascript/particles.js"></script>
      <script src="javascript/tab.js"></script>
      <script src="javascript/achievement.js"></script>
+     <script src="javascript/session.js"></script>
+
 
 
 
