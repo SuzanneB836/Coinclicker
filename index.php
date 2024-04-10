@@ -98,7 +98,7 @@
         <div id="login" >
           <div class="close" onclick="overlayOff('login')">Close</div>
               <div class="tab-bar">
-                <button class="tab-item tab-button" onclick="openTab('Login')">Do With An Account</button>
+                <button class="tab-item tab-button" onclick="openTab('Login')">Login With An Account</button>
                 <button class="tab-item tab-button" onclick="openTab('Register')">Create An Account</button>
               </div>
 
